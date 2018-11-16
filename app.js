@@ -6,8 +6,10 @@ document.getElementById('loan-form').addEventListener('submit', function(e) {
     // Show loader
     document.getElementById('loading').style.display = 'block';
 
+    // Calculate results after 2 seconds
     setTimeout(calculateResults, 2000);
 
+    // Prevent default
     e.preventDefault();
 });
 
